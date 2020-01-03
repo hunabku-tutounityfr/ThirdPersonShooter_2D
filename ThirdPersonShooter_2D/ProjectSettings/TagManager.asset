@@ -47,3 +47,6 @@ TagManager:
   - name: Arena
     uniqueID: 3128341317
     locked: 0
+  - name: Characters
+    uniqueID: 4079031809
+    locked: 0
