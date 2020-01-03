@@ -45,8 +45,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\States.cs" />
-     <Compile Include="Assets\Scripts\Stats.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\EnemyActions.cs" />
+     <Compile Include="Assets\Scripts\EnemyStates.cs" />
+     <Compile Include="Assets\Scripts\EnemyStats.cs" />
+     <Compile Include="Assets\Scripts\PlayerActions.cs" />
+     <Compile Include="Assets\Scripts\PlayerStates.cs" />
+     <Compile Include="Assets\Scripts\PlayerStats.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

@@ -1,24 +1,20 @@
 ﻿using UnityEngine;
 
-public class Stats : MonoBehaviour
+public class EnemyStats : MonoBehaviour
 {
     void Start ()
     {
         isDead = false;
         health = maxHealth;
     }
-    void Update ()
-    {
-        // Damage test
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            Damage(10f);
-        }
-    }
 
     public void Damage (float amount)
     {
-        if (health <= 0) isDead = true;
+        if (health <= 0 && !isDead)
+        {
+            isDead = true;
+            Destroy(gameObject);
+        }
         if (isDead) return;
         
         if (health > 0)
@@ -35,6 +31,9 @@ public class Stats : MonoBehaviour
     [Space]
     [SerializeField] Transform healthBar_Bar_Transform = null;
 
+    [Header("--- Behaviour ---")]
+    public float brainDelay = 1f;
+
     [Header("--- Status ---")]
-    [SerializeField] bool isDead = false;
+    public bool isDead = false;
 }
